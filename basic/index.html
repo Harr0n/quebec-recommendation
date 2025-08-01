@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programme de recherche - Connectivité</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <h1>Programme de recherche en partenariat</h1>
+    <p>Études scientifiques sur la connectivité - Synthèse des connaissances</p>
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#content">Content</a>
+      <a href="#references">References</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <section id="intro" class="card">
+    <h2>Project Overview</h2>
+    <p><strong>Group:</strong> [To be filled]</p>
+    <p><strong>Timeline:</strong> April 2025 – August 2025</p>
+    <p><strong>Axe:</strong> Technologique, Impacts sociaux</p>
+  </section>
+
+  <section id="content" class="card">
+    <h2>Project Content</h2>
+    <div class="language-switch">
+      <button onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('fr')">Français</button>
+    </div>
+    <div id="content-en">
+      <p>[English version placeholder]</p>
+    </div>
+    <div id="content-fr" style="display:none;">
+      <p>[Version française placeholder]</p>
+    </div>
+  </section>
+
+  <section id="references" class="card">
+    <h2>References</h2>
+    <ul>
+      <li>[Reference 1]</li>
+      <li>[Reference 2]</li>
+    </ul>
+  </section>
+
+  <section id="evaluation" class="card">
+    <h2>Official Evaluation</h2>
+    <a href="evaluation.pdf" download>📄 Download Evaluation PDF</a>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: [your-email@concordia.ca]</p>
+    <p>Institution: Concordia University</p>
+  </section>
+
+  <footer class="main-footer">
+    <p>© 2025 Programme Connectivité</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('content-fr').style.display = lang === 'fr' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
