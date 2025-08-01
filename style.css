@@ -196,3 +196,10 @@ body {
   color: black;
   font-weight: bold;
 }
+
+.references li {
+  margin-bottom: 0.75em;
+  padding-left: 0.5em;
+  text-indent: -0.5em; /* 悬挂缩进：让编号对齐 */
+  line-height: 1.6;
+}
