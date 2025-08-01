@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenu / Content</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function switchLang(lang) {
+            document.getElementById('english').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('french').style.display = lang === 'fr' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="switchLang('en')">
+    <header>
+        <h1>Contenu Principal / Main Content</h1>
+        <nav>
+            <a href="index.html">Accueil / Home</a>
+            <a href="content.html">Contenu / Content</a>
+            <a href="references.html">Références / References</a>
+            <a href="evaluation.html">Évaluation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div>
+            <button onclick="switchLang('en')">English</button>
+            <button onclick="switchLang('fr')">Français</button>
+        </div>
+    </header>
+    <main>
+        <div id="english">
+            <h2>English Content</h2>
+            <p>[Placeholder for English version of the report]</p>
+        </div>
+        <div id="french" style="display:none;">
+            <h2>Contenu Français</h2>
+            <p>[Espace réservé pour la version française du rapport]</p>
+        </div>
+    </main>
+</body>
+</html>
