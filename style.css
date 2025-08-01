@@ -82,7 +82,7 @@ header {
 }
 .hero {
     padding: 4rem 2rem;
-    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    background: linear-gradient(to right, #2196f3, #e3f2fd);
     text-align: center;
     animation: fadeIn 1s ease-in;
 }
@@ -101,4 +101,72 @@ footer {
 }
 .fade-in {
     animation: fadeIn 1s ease-in;
+}
+
+/* 添加圆角+阴影美化内容区域 */
+.content {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* 优化 <ul> 和 <ol> 内容视觉 */
+.content ul,
+.content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content ul li::before {
+  content: "✔ ";
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.content ol li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 更美的主标题 */
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.4;
+  background: linear-gradient(to right, #1976d2, #42a5f5);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #1976d2;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.button-link:hover {
+  background-color: #0d47a1;
 }
